@@ -53,8 +53,3 @@ mvn spring-boot:run
 - **Joao Victor Morais (RM 550453)**
 - **Lucca Vilaça (RM 551538)**
 
-## Publicação
-Publique o repositório **público** no GitHub e envie o link até **2025-09-06**.
-
----
-_Gerado em 2025-09-05._
