@@ -1,0 +1,12 @@
+CREATE TABLE users (
+  id BIGSERIAL PRIMARY KEY,
+  username VARCHAR(120) NOT NULL UNIQUE,
+  password VARCHAR(200) NOT NULL,
+  role VARCHAR(20) NOT NULL DEFAULT 'USER',
+  enabled BOOLEAN NOT NULL DEFAULT TRUE,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- password: admin123 (BCrypt)
+INSERT INTO users (username, password, role, enabled) VALUES
+('admin', '$2a$10$6a5cF1L2tO0G4n9i3E0C3u0c6b1pZc5e5k9Kf3wB7pOQvYk9V3OQy', 'ADMIN', TRUE);
